@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<script src= "http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+</head>
+
+<body>
+
+<div ng-app="myApp" ng-controller="namesCtrl"> 
+
+<table border="1">
+<tr ng-repeat="x in names | uppercase | orderBy:'name'">
+<td>{{x.name}}</td>
+<td>{{x.age}}</td>
+<td>{{x.gender}}</td>
+</tr>
+</table>
+
+</div>
+
+<script src="personalController.js"></script>
+
+</body>
+</html>

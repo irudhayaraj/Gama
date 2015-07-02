@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+<script>
+angular.module("myapp",[]).controller("eventController",function($scope) {
+$scope.doClick=function() {
+alert("welcome raj");
+}
+});
+</script>
+</head>
+<body>
+<div ng-app="myapp" ng-controller="eventController">
+<div ng-mouseover="doClick()">click me</div>
+</body>
+</html>
+
